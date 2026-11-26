@@ -292,7 +292,7 @@ h1 span {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 22px;
+  /* gap: 22px;*/
   flex-wrap: wrap;
   color: #9cabbc;
 }
@@ -638,6 +638,48 @@ h1 span {
   font-size: 14px;
   padding: 13px 20px;
 }
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: defilement 35s linear infinite;
+  will-change: transform;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-right: 50px;
+  flex-shrink: 0;
+  font-family: Anton, sans-serif;
+  text-transform: uppercase;
+}
+
+.marquee-group span {
+  color: white;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+@keyframes defilement {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-25%);
+  }
+}
+
 @media (max-width: 1400px) {
   .hero-inner > p {
     text-shadow: 2px 2px 8px #f4f7fc;
@@ -845,52 +887,4 @@ h1 span {
 .svg-1 {
   color: #4893ff;
   width: 64px;
-}
-
-
-
-
-
-
-
-
-.marquee {
-  width: 100%;
-  overflow: hidden;
-  padding: 30px 0;
-}
-
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: defilement 35s linear infinite;
-}
-
-.marquee-group {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding-right: 50px;
-  flex-shrink: 0;
-  font-family: anton;
-  text-transform: uppercase;
-}
-
-.marquee-group span {
-  color: white;
-  font-size: 25px;
-  font-weight: 700;
-  white-space: nowrap;
-}
-
-/* Animation infinie */
-
-@keyframes defilement {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(-50%);
-  }
 }
