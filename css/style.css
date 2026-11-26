@@ -37,10 +37,11 @@ a {
   justify-content: space-between;
 }
 .logo {
-  width: 78px;
-  height: 78px;
+  width: auto;
+  height: 105px;
   display: flex;
   align-items: center;
+  padding-top: 10px;
 }
 .logo img {
   width: 100%;
@@ -726,6 +727,16 @@ h1 span {
   }
   .hero-inner > p {
     font-size: 16px;
+    padding: 5px;
+    background:
+      linear-gradient(
+        90deg,
+        rgba(5, 12, 23, 0.98) 0%,
+        rgba(5, 12, 23, 0.75) 35%,
+        rgba(5, 12, 23, 0.2) 75%,
+        transparent 100%
+      ),
+      linear-gradient(0deg, #070e19 0%, #070e19ab 0%);
   }
   .btn {
     font-size: 14px;
