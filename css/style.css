@@ -846,3 +846,51 @@ h1 span {
   color: #4893ff;
   width: 64px;
 }
+
+
+
+
+
+
+
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  padding: 30px 0;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: defilement 35s linear infinite;
+}
+
+.marquee-group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-right: 50px;
+  flex-shrink: 0;
+  font-family: anton;
+  text-transform: uppercase;
+}
+
+.marquee-group span {
+  color: white;
+  font-size: 25px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Animation infinie */
+
+@keyframes defilement {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
