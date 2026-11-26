@@ -648,7 +648,7 @@ h1 span {
 .marquee-track {
   display: flex;
   width: max-content;
-  animation: defilement 35s linear infinite;
+  animation: defilement 40s linear infinite;
   will-change: transform;
 }
 
@@ -664,7 +664,7 @@ h1 span {
 
 .marquee-group span {
   color: white;
-  font-size: 60px;
+  font-size: 140px;
   font-weight: 400;
   letter-spacing: -0.01em;
   white-space: nowrap;
