@@ -670,9 +670,6 @@ h1 span {
   white-space: nowrap;
 }
 
-
-
-
 .home-work-gallery {
   display: grid;
 
@@ -705,22 +702,6 @@ h1 span {
   object-fit: cover;
   display: block;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 @keyframes defilement {
   from {
