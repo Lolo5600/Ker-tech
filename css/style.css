@@ -507,7 +507,7 @@ h1 span {
   gap: 18px;
   font-size: 15px;
 }
-.included span: first-letter {
+.included span first-letter {
   color: #329fff;
 }
 .about-hero {
